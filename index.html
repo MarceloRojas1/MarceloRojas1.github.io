@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <header class="header">
+    <h1 class="my-name">Marcelo Ignacio Rojas Rozas</h1>
+    <p class="major">Major: Computer Science</p>
+    <p class="year">Year of University Enrollment: 2020</p>
+    <p class="github">
+      GitHub: 
+      <a href="https://github.com/MarceloRojas1" target="_blank">
+        github.com/MarceloRojas1
+      </a>
+    </p>
+  </header>
+
+
+  <section class="summary">
+    <h2>Personal Summary</h2>
+    <p>
+      I am studying civil informatics engineering. I like history, video games, 
+      and anime, and I spend half my time at the gym instead of socializing.
+    </p>
+  </section>
+
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Python</td><td>Advance</td></tr>
+        <tr><td>C++</td><td>Advance</td></tr>
+        <tr><td>JavaScript</td><td>Basic</td></tr>
+        <tr><td>HTML/CSS</td><td>Basic</td></tr>
+        <tr><td>Git</td><td>Advance</td></tr>
+        <tr><td>Excel</td><td>Basic</td></tr>
+        <tr><td>SQL</td><td>Advance</td></tr>
+        <tr><td>English</td><td>Advance</td></tr>
+        <tr><td>Spanish</td><td>Native</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="custom-section">
+    <h2>Custom Section</h2>
+    <p id="dynamicText">Write something in the box to update text</p>
+    <input type="text" id="textInput" placeholder="text here">
+    <button onclick="updateText()">Update Text</button>
+  </section>
+
+
+ 
+  <script>
+    function updateText() {
+      var userInput = document.getElementById("textInput").value;
+      document.getElementById("dynamicText").textContent = userInput || "bruh loco";
+    }
+  </script>
+
+</body>
+</html>
+
+
